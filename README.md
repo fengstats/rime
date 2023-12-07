@@ -23,13 +23,19 @@ git clone --depth=1 https://github.com/rime/plum
 cd plum
 ```
 
-### 第二步：清空 Rime 目录
+### 第二步：清空 Rime 的配置目录
 
-> ⚠️ 注意️：如果你之前没怎么改过 Rime 的配置，可以不备份，否则在操作前最好将 **配置备份**，防止不知道怎么操作导致玩坏了，这个时候可以删掉玩坏的目录，把备份目录名字改回来，点击重新部署即可恢复，别说我没提醒奥。
+⚠️ 注意️：在操作前最好将 **配置备份**，不然待会玩坏了别说是我教的。
 
 ```shell
 # Mac
 cp -r ~/Library/Rime ~/Library/Rime.bak
+```
+
+⚠️ 这个命令危险，建议手动清空，记得要先 **备份** 啊！😈
+
+```shell
+rm -rf ~/Library/Rime/*
 ```
 
 ### 第三步：执行雾凇拼音初始化安装脚本
@@ -77,22 +83,22 @@ style:
 # 皮肤列表
 preset_color_schemes:
   google_custom:
-    name: "小小石爆改"
-    horizontal: true                          # true横排，false竖排
-    back_color: 0xFFFFFF                      # 候选条背景色
-    border_height: 0                          # 窗口上下高度，大于圆角半径才生效
-    border_width: 8                           # 窗口左右宽度，大于圆角半径才生效
-    candidate_format: "%c %@ "                # 用 1/6 em 空格 U+2005 来控制编号 %c 和候选词 %@ 前后的空间
-    comment_text_color: 0x999999              # 拼音等提示文字颜色
-    corner_radius: 6                          # 窗口圆角
-    hilited_corner_radius: 5                  # 高亮圆角
-    font_face: PingFangSC                     # 候选词字体
-    font_point: 18                            # 候选字大小
-    hilited_candidate_back_color: 0xF5803B   # 第一候选项背景色
-    hilited_candidate_text_color: 0xFFFFFF    # 第一候选项文字颜色
-    label_font_point: 14                      # 候选编号大小
-    text_color: 0x424242                      # 拼音行文字颜色
-    inline_preedit: true                      # 拼音位于： 候选框 false | 行内 true
+    name: '小小石爆改'
+    horizontal: true # true横排，false竖排
+    back_color: 0xFFFFFF # 候选条背景色
+    border_height: 0 # 窗口上下高度，大于圆角半径才生效
+    border_width: 8 # 窗口左右宽度，大于圆角半径才生效
+    candidate_format: '%c %@ ' # 用 1/6 em 空格 U+2005 来控制编号 %c 和候选词 %@ 前后的空间
+    comment_text_color: 0x999999 # 拼音等提示文字颜色
+    corner_radius: 6 # 窗口圆角
+    hilited_corner_radius: 5 # 高亮圆角
+    font_face: PingFangSC # 候选词字体
+    font_point: 18 # 候选字大小
+    hilited_candidate_back_color: 0xF5803B # 第一候选项背景色
+    hilited_candidate_text_color: 0xFFFFFF # 第一候选项文字颜色
+    label_font_point: 14 # 候选编号大小
+    text_color: 0x424242 # 拼音行文字颜色
+    inline_preedit: true # 拼音位于： 候选框 false | 行内 true
 ```
 
 ## 给用 Vim 的应用加上 ESC 自动切换英文功能（留下 Rime 主要原因！）
@@ -120,4 +126,3 @@ preset_color_schemes:
 5. 打开 iCloud 查看是否同步成功。
 
 ![](https://cdn.jsdelivr.net/gh/fengstats/blogcdn@main/2023/Rime-%E5%90%8C%E6%AD%A5%20iCloud.png)
-
