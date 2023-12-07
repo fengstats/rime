@@ -25,11 +25,36 @@ show_notifications_when: appropriate
 
 # ascii_mode、inline、no_inline、vim_mode 等等设定
 # 可参考 /Library/Input Methods/Squirrel.app/Contents/SharedSupport/squirrel.yaml
+# 设置特定 App 下默认中/英文输入
 app_options:
-  # com.apple.Spotlight:
-  #   ascii_mode: true    # 开启默认英文
-  # com.microsoft.VSCode:
-  #   ascii_mode: false   # 关闭默认英文
+  # ascii_mode: true 为英文，false 为中文
+  com.apple.Spotlight:
+    ascii_mode: true
+  com.raycast.macos:
+    ascii_mode: true
+  org.yuanli.utools:
+    ascii_mode: true
+  com.xunyong.hapigo:
+    ascii_mode: true
+
+  # vim_mode: 启用 Vim 模式，按 ESC 后自动切换为英文
+  com.microsoft.VSCode:
+    vim_mode: true
+    ascii_mode: true
+    # 不允许中文状态输出英文标点(半角)
+    # ascii_punct: true
+  md.obsidian:
+    vim_mode: true 
+    ascii_mode: true
+  com.google.Chrome:
+    vim_mode: true
+    ascii_mode: true
+  com.googlecode.iterm2:
+    vim_mode: true
+    ascii_mode: true
+  com.apple.Terminal:
+    vim_mode: true
+    ascii_mode: true
 
 
 style:
