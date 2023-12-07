@@ -4,10 +4,11 @@
 
 2023-09-19 麻了！Rime 配置的 16 进制配色和正常的 16 进制配色颜色表对不上啊，想自定义颜色都不好弄，设置出来更像是互补色。只有在网页 [Rime 西米](https://fxliang.github.io/RimeSeeMe/) 调出来的才是对的。
 
-## Rime 默认词库的联想词总是怪怪的？这个拼音方案真的无敌！
+## Rime 的默认词库联想词总是怪怪的？这个拼音方案真的无敌！
 
-先上一波链接，分别是 Github 源码、文档、安装工具：
+先上一波链接，分别是 Rime、rime-ice 源码、文档、安装工具：
 
+- [Rime](https://rime.im/) - **需要先下载安装**。
 - [GitHub - rime-ice](https://github.com/iDvel/rime-ice)
 - [Rime 配置：雾凇拼音 - Dvel's Blog](https://dvel.me/posts/rime-ice/)
 - [Rime plum](https://github.com/rime/plum) - 东风破是 Rime 官方的一个配置管理工具，也就是下面我们要用到的安装工具。
@@ -47,7 +48,13 @@ bash rime-install iDvel/rime-ice:others/recipes/full
 bash rime-install iDvel/rime-ice:others/recipes/all_dicts
 ```
 
-搞定！就这么简单，玩去吧！😊
+### 第四步：点击部署
+
+使用默认快捷键 Control+Option+\` 或者找到 Rime 的菜单栏图标点击【重新部署】即可
+
+![](https://cdn.jsdelivr.net/gh/fengstats/blogcdn@main/2023/Rime%20%E9%83%A8%E7%BD%B2.png)
+
+此时试试切换输入法随便打打字，如果是 Rime 的皮肤，那么搞定，就这么简单，玩去吧！😊
 
 ## Mac 获取指定 App 的 app_options
 
