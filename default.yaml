@@ -160,6 +160,8 @@ key_binder:
   select_last_character: 'bracketright' # 右中括号 ]
 
   bindings:
+    - { when: has_menu, accept: semicolon, send: 2 } # ":" (分号)选择第 2 个候选词
+
     # Tab / Shift+Tab 切换光标至下/上一个拼音
     - { when: composing, accept: Shift+Tab, send: Shift+Left }
     - { when: composing, accept: Tab, send: Shift+Right }
