@@ -32,12 +32,13 @@ app_options:
     ascii_mode: true
   com.raycast.macos:
     ascii_mode: true
-  org.yuanli.utools:
-    ascii_mode: true
   com.xunyong.hapigo:
     ascii_mode: true
 
   # vim_mode: 启用 Vim 模式，按 ESC 后自动切换为英文
+  org.yuanli.utools:
+    vim_mode: true
+    ascii_mode: true
   com.microsoft.VSCode:
     vim_mode: true
     ascii_mode: true
