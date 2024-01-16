@@ -96,7 +96,8 @@ preset_color_schemes:
     hilited_corner_radius: 5                  # 高亮圆角
     font_face: PingFangSC                     # 候选词字体
     font_point: 18                            # 候选字大小
-    hilited_candidate_back_color: 0xF5803B   # 第一候选项背景色
+    # hilited_candidate_back_color: 0xF5803B   # 第一候选项背景色
+    hilited_candidate_back_color: 0xF55C8A   # 第一候选项背景色
     hilited_candidate_text_color: 0xFFFFFF    # 第一候选项文字颜色
     label_font_point: 14                      # 候选编号大小
     text_color: 0x424242                      # 拼音行文字颜色
