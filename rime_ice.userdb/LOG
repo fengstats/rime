@@ -1,3 +1,5 @@
-2024/04/10-01:09:26.557504 0x1ece2bac0 Recovering log #415
-2024/04/10-01:09:26.576596 0x1ece2bac0 Delete type=0 #415
-2024/04/10-01:09:26.576647 0x1ece2bac0 Delete type=3 #414
+2024/04/10-01:22:04.487332 0x1ece2bac0 Recovering log #417
+2024/04/10-01:22:04.487511 0x1ece2bac0 Level-0 table #419: started
+2024/04/10-01:22:04.495865 0x1ece2bac0 Level-0 table #419: 816 bytes OK
+2024/04/10-01:22:04.512074 0x1ece2bac0 Delete type=0 #417
+2024/04/10-01:22:04.512099 0x1ece2bac0 Delete type=3 #416
