@@ -61,7 +61,7 @@ app_options:
 style:
   # 选择皮肤，亮色与暗色主题
   color_scheme: google_custom
-  color_scheme_dark: purity_of_form_custom
+  color_scheme_dark: google_dark_custom
 
   # 预设选项。如果皮肤没写，则使用这些属性；如果皮肤写了，使用皮肤的。
   text_orientation: horizontal  # horizontal | vertical
@@ -84,6 +84,26 @@ style:
 
 # 皮肤列表
 preset_color_schemes:
+  google_dark_custom:
+    name: "fengstats"
+    horizontal: true                          # true横排，false竖排
+    back_color: 0xE1E1E1                      # 候选条背景色
+    border_height: 0                          # 窗口上下高度，大于圆角半径才生效
+    border_width: 6                           # 窗口左右宽度，大于圆角半径才生效
+    candidate_format: "%c %@ "                # 用 1/6 em 空格 U+2005 来控制编号 %c 和候选词 %@ 前后的空间
+    comment_text_color: 0x999999              # 拼音等提示文字颜色
+    corner_radius: 4                          # 窗口圆角
+    hilited_corner_radius: 6                  # 高亮圆角
+    font_face: ""                             # 候选词字体
+    font_point: 18                            # 候选字大小
+    # hilited_candidate_back_color: 0xF5803B   # 第一候选项背景色
+    # hilited_candidate_back_color: 0xF55C8A   # 第一候选项背景色
+    hilited_candidate_back_color: 0x52A354    # 第一候选项背景色
+    hilited_candidate_text_color: 0xFFFFFF    # 第一候选项文字颜色
+    label_font_point: 12                      # 候选编号大小
+    text_color: 0x424242                      # 拼音行文字颜色
+    inline_preedit: true                      # 拼音位于： 候选框 false | 行内 true
+
   google_custom:
     name: "fengstats"
     horizontal: true                          # true横排，false竖排
