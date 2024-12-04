@@ -14,7 +14,7 @@
 # 转化应当大写的单词
 ---
 name: en
-version: "2024-07-13"
+version: "2024-11-28"
 sort: by_weight
 ...
 # +_+
@@ -1451,7 +1451,6 @@ autumn	autumn
 AUX	AUX
 auxiliary	auxiliary
 AV	AV
-Ava	Ava
 avail	avail
 availability	availability
 available	available
@@ -2784,7 +2783,6 @@ cancellation	cancellation
 cancellations	cancellations
 cancelled	cancelled
 cancer	cancer
-Cancer	Cancer
 cancers	cancers
 # Cancun	Cancun
 candid	candid
@@ -2932,7 +2930,6 @@ carved	carved
 carver	carver
 carving	carving
 Cary	Cary
-CAS	CAS
 casa	casa
 cascade	cascade
 cascading	cascading
@@ -3206,6 +3203,7 @@ chaser	chaser
 chasing	chasing
 chassis	chassis
 chat	chat
+chatbot	chatbot
 chateau	chateau
 Chatham	Chatham
 chats	chats
@@ -3521,6 +3519,7 @@ CLI	CLI
 clic	clic
 click	click
 clicked	clicked
+clicker	clicker
 clicking	clicking
 clicks	clicks
 client	client
@@ -5258,6 +5257,7 @@ despair	despair
 despatch	despatch
 desperate	desperate
 desperately	desperately
+desperation	desperation
 despise	despise
 despite	despite
 dessert	dessert
@@ -11316,6 +11316,7 @@ loops	loops
 loose	loose
 loosely	loosely
 loosen	loosen
+loot	loot
 Lopez	Lopez
 lord	lord
 lords	lords
@@ -12192,6 +12193,7 @@ miniature	miniature
 miniatures	miniatures
 minimal	minimal
 minimize	minimize
+minimized	minimized
 minimizing	minimizing
 minimum	minimum
 mining	mining
@@ -12629,7 +12631,7 @@ mutually	mutually
 muze	muze
 # mv	mv
 MVC	MVC
-# mvp	mvp
+MVP	MVP
 # mw	mw
 # mx	mx
 my	my
@@ -12914,9 +12916,10 @@ niece	niece
 Nielsen	Nielsen
 nifty	nifty
 Nigel	Nigel
-niger	niger
+Niger	Niger
 Nigeria	Nigeria
 Nigerian	Nigerian
+nigger	nigger
 night	night
 nightclub	nightclub
 nightlife	nightlife
@@ -19483,6 +19486,7 @@ tor	tor
 Torah	Torah
 torch	torch
 torches	torches
+torchlight	torchlight
 tori	tori
 Torino	Torino
 torment	torment
@@ -21416,7 +21420,7 @@ zeal	zeal
 Zealand	Zealand
 zebra	zebra
 Zelda	Zelda
-Zen	Zen
+zen	zen
 zenith	zenith
 zeppelin	zeppelin
 zero	zero
