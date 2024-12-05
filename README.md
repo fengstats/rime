@@ -1,17 +1,20 @@
 ## 前言
 
-我的 Rime 配置仓库，顺便记录一些遇到的问题和解决方案。
+> 我的 Rime 配置仓库，顺便记录一些遇到的问题和解决方案
 
-2023-09-19 麻了！Rime 配置的 16 进制配色和正常的 16 进制配色颜色表对不上啊，想自定义颜色都不好弄，设置出来更像是互补色。只有在网页 [Rime 西米](https://fxliang.github.io/RimeSeeMe/) 调出来的才是对的。
+2023-09-19 发现 Rime 配置的 16 进制配色和正常的 16 进制配色颜色表对不上啊，想自定义颜色都不好弄，出来的更像是互补色，就只有在网页 [Rime 西米](https://fxliang.github.io/RimeSeeMe/) 调出来的才是对的
 
-## Rime 的默认词库联想词总是怪怪的？这个拼音方案真的无敌！
+2024-01-16 噢噢懂了，Rime 调配出来的是 BGR，一般的是 RGB，转换下就行，在上面网页工具上可以输入转换：
+
+![](https://cdn.jsdelivr.net/gh/fengstats/blogcdn@main/2024/Rime%20BGR%20and%20RGB.png)
+
+## Rime 的默认词库联想词总是怪怪的？试试这个拼音方案
 
 先上一波链接，分别是 Rime、rime-ice 源码、文档、安装工具：
 
-- [Rime](https://rime.im/) - **需要先下载安装**。
-- [GitHub - rime-ice](https://github.com/iDvel/rime-ice)
-- [Rime 配置：雾凇拼音 - Dvel's Blog](https://dvel.me/posts/rime-ice/)
-- [Rime plum](https://github.com/rime/plum) - 东风破是 Rime 官方的一个配置管理工具，也就是下面我们要用到的安装工具。
+1. [Rime](https://rime.im/)（**需要先下载安装**）
+2. [rime-ice](https://github.com/iDvel/rime-ice)（介绍：[Rime 配置：雾凇拼音 - Dvel's Blog](https://dvel.me/posts/rime-ice/)）
+3. [Rime plum](https://github.com/rime/plum)（官方的配置管理工具 / 用于安装和更新）
 
 ### 第一步：下载工具仓库并进入
 
@@ -26,14 +29,14 @@ cd plum
 
 ### 第二步：清空 Rime 的配置目录
 
-⚠️ 注意️：在操作前最好将 **配置备份**，不然待会玩坏了别说是我教的。
+**注意**️：建议在操作前最好将 **配置备份**，不然玩坏了别说是我教的（狗头）
 
 ```shell
 # Mac
 cp -r ~/Library/Rime ~/Library/Rime.bak
 ```
 
-⚠️ 这个命令危险，建议手动清空，记得要先 **备份** 啊！😈
+这个命令危险，建议手动清空，一定记得要先 **备份** 呀！
 
 ```shell
 rm -rf ~/Library/Rime/*
@@ -56,7 +59,7 @@ bash rime-install iDvel/rime-ice:others/recipes/all_dicts
 
 此时试试切换输入法随便打打字，如果是 Rime 的皮肤，那么搞定，就这么简单，玩去吧！😊
 
-## Mac 获取指定 App 的 app_options
+## 获取 Mac 指定 App 的 app_options
 
 把 `Raycast.app` 更换为其他你想要获取的 App 应用名称即可。
 
@@ -108,11 +111,13 @@ preset_color_schemes:
     inline_preedit: true # 拼音位于： 候选框 false | 行内 true
 ```
 
-## 给用 Vim 的应用加上 ESC 自动切换英文功能（留下 Rime 主要原因！）
+## 给用 Vim 的应用加上 ESC 自动切换英文功能
+
+这也是我留下 Rime 主要原因！
 
 ![](https://cdn.jsdelivr.net/gh/fengstats/blogcdn@main/2023/Rime%20%E8%AE%BE%E7%BD%AE%20Vim%20%E6%A8%A1%E5%BC%8F.png)
 
-## VS Code 快捷键冲突问题
+## 关于部署和 VS Code 快捷键冲突问题
 
 参考文档：[定制呼出方案的快捷键](https://github.com/rime/home/wiki/CustomizationGuide#%E4%B8%80%E4%BE%8B%E5%AE%9A%E8%A3%BD%E5%96%9A%E5%87%BA%E6%96%B9%E6%A1%88%E9%81%B8%E5%96%AE%E7%9A%84%E5%BF%AB%E6%8D%B7%E9%8D%B5)
 
@@ -120,7 +125,7 @@ preset_color_schemes:
 
 ![](https://cdn.jsdelivr.net/gh/fengstats/blogcdn@main/2023/Rime%20%E6%B3%A8%E9%87%8A%E6%96%B9%E6%A1%88%E9%80%89%E6%8B%A9%E5%BF%AB%E6%8D%B7%E9%94%AE.png)
 
-## iCloud 同步（不推荐了）
+## ~~iCloud 同步（不推荐）~~
 
 2023-12-07 如果你会 Git，那我更推荐推送到 Git 远程仓库方式进行同步，能够清晰的看到历史提交内容的修改记录。
 
