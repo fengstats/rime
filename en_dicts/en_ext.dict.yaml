@@ -10,7 +10,7 @@
 # 少数单词与 en 重复，纯粹是为了排版美观，部署时的报错 duplicate word definition 可忽略，无任何影响
 ---
 name: en_ext
-version: "2025-04-16"
+version: "2026-02-04"
 sort: by_weight
 ...
 # 一些杂项
@@ -21,7 +21,6 @@ README.md	README.md
 # 按键
 Fn	Fn
 cmd	cmd
-cmdline	cmdline
 command	command
 Ctrl	Ctrl
 control	control
@@ -134,10 +133,9 @@ net	net	2
 .NET	dotnet
 # 带权重的系列
 iPhone	iPhone	999
-iPhone 16	iPhone	4
-iPhone 16 Plus	iPhone	3
-iPhone 16 Pro	iPhone	2
-iPhone 16 Pro Max	iPhone	1
+iPhone 17	iPhone	3
+iPhone 17 Pro	iPhone	2
+iPhone 17 Pro Max	iPhone	1
 Mac OS X	MacOSX	999
 Mac OS X Cheetah	MacOSX	1
 Mac OS X Puma	MacOSX	2
@@ -162,6 +160,7 @@ macOS Monterey	macOS	6
 macOS Ventura	macOS	7
 macOS Sonoma	macOS	8
 macOS Sequoia	macOS	9
+macOS Tahoe	macOS	10
 Windows	Windows	999
 Windows 95	Windows	1
 Windows 98	Windows	2
@@ -174,7 +173,7 @@ Windows 7	Windows	7
 Windows 8	Windows	8
 Windows 10	Windows	10
 Windows 11	Windows	11
-Windows 12	Windows	12
+# Windows 12	Windows	12
 # +_+
 iPhone 3G	iPhone3G
 iPhone 3GS	iPhone3GS
@@ -216,9 +215,14 @@ iPhone 15 Plus	iPhone15Plus
 iPhone 15 Pro	iPhone15Pro
 iPhone 15 Pro Max	iPhone15ProMax
 iPhone 16	iPhone16
+iPhone 16e	iPhone16e
 iPhone 16 Plus	iPhone16Plus
 iPhone 16 Pro	iPhone16Pro
 iPhone 16 Pro Max	iPhone16ProMax
+iPhone 17	iPhone17
+iPhone Air	iPhoneAir
+iPhone 17 Pro	iPhone17Pro
+iPhone 17 Pro Max	iPhone17ProMax
 Mac OS X Cheetah	MacOSXCheetah
 Mac OS X Puma	MacOSXPuma
 Mac OS X Jaguar	MacOSXJaguar
@@ -240,6 +244,7 @@ macOS Monterey	macOSMonterey
 macOS Ventura	macOSVentura
 macOS Sonoma	macOSSonoma
 macOS Sequoia	macOSSequoia
+macOS Tahoe	macOSTahoe
 Windows 95	Windows95
 Windows 98	Windows98
 Windows Me	WindowsMe
@@ -298,9 +303,9 @@ Aeron Chair	AeronChair
 Netscape	Netscape
 WeChat	WeChat
 Dota	Dota
-Database	Database
 Superlist	Superlist
 DJ	DJ
+Disc Jockey	DJ
 DLC	DLC
 Downloadable content	DLC
 Downloadable content	Downloadablecontent
@@ -332,6 +337,7 @@ Advanced RISC Machine	ARM
 Advanced RISC Machine	AdvancedRISCMachine
 eGPU	eGPU
 One Piece	OnePiece
+CBD	CBD
 CCTV	CCTV
 Closed-Circuit Television	CCTV
 Closed-Circuit Television	Closed-CircuitTelevision
@@ -355,7 +361,6 @@ BBC	BBC
 DataGrip	DataGrip
 AlphaGo	AlphaGo
 AlphaFold	AlphaFold
-Valve	Valve
 CS:GO	CS:GO
 Counter-Strike: Global Offensive	CS:GO
 Counter-Strike: Global Offensive	Counter-Strike:GlobalOffensive
@@ -374,6 +379,7 @@ Workspace	Workspace
 AdSense	AdSense
 Authenticator	Authenticator
 DeepMind	DeepMind
+Figma	Figma
 Google	Google
 Google Ads	GoogleAds
 Google AdSense	GoogleAdSense
@@ -386,6 +392,9 @@ Google Chrome	GoogleChrome
 Google DeepMind	GoogleDeepMind
 Google Docs	GoogleDocs
 Google Drive	GoogleDrive
+Google Earth	GoogleEarth
+Google Fi	GoogleFi
+Google Fi Wireless	GoogleFiWireless
 Google Gemini	GoogleGemini
 Google Gemini Advanced	GoogleGeminiAdvanced
 Google Keep	GoogleKeep
@@ -398,11 +407,15 @@ Google Play Music	GooglePlayMusic
 Google TV	GoogleTV
 Google Voice	GoogleVoice
 Google Workspace	GoogleWorkspace
+NotebookLM	NotebookLM
+Google NotebookLM	GoogleNotebookLM
 WYSIWYG	WYSIWYG
 What You See Is What You Get	WYSIWYG
 Mark Text	MarkText
 Joplin	Joplin
 SteamOS	SteamOS
+Steam Deck	SteamDeck
+Steam Machine	SteamMachine
 TikTok	TikTok
 IDC	IDC
 International Data Corporation	IDC
@@ -420,6 +433,14 @@ Todoist	Todoist
 TeamViewer	TeamViewer
 Sleep Cycle	SleepCycle
 Sony	Sony
+Nikon	Nikon
+Canon	Canon
+FujiFilm	FujiFilm
+Panasonic	Panasonic
+Ricoh	Ricoh
+Casio	Casio
+CCD	CCD
+Charge-Coupled Device	CCD
 PDF Expert	PDFExpert
 OSCHINA	OSCHINA
 Navicat	Navicat
@@ -483,6 +504,11 @@ PC	PC
 iStat	iStat
 ClashX	ClashX
 ClashX Pro	ClashXPro
+Clash for Windows	ClashForWindows
+Clash for Android	ClashForAndroid
+OpenClash	OpenClash
+passwall	passwall
+passwall2	passwall2
 qBittorrent	qBittorrent
 qBittorrent	qBit
 qBittorrent Enhanced Edition	qEE
@@ -496,7 +522,6 @@ TOML	TOML
 Tom's Obvious Minimal Language	TOML
 Hexo	Hexo
 Hugo	Hugo
-Epic	Epic
 Epic Games	EpicGames
 Instagram	IG
 Instagram	INS
@@ -560,6 +585,7 @@ Microsoft PowerPoint	PPT
 PyCharm	PyCharm
 roguelike	roguelike
 Redis	Redis
+Memcached	Memcached
 RION	RION
 SegmentFault	SegmentFault
 SPA	SPA
@@ -575,6 +601,135 @@ V2EX	V2EX
 VSCode	VSCode
 Vue	Vue
 Vue.js	Vue.js
+Vite+	Vite+
+Vitest	Vitest
+VuePress	VuePress
+VitePress	VitePress
+Oxc	Oxc
+NestJS	NestJS
+Next.js	Next.js
+Nuxt	Nuxt
+Jekyll	Jekyll
+DuckDB	DuckDB
+Vitess	Vitess
+SurrealDB	SurrealDB
+CockroachDB	CockroachDB
+ClickHouse	ClickHouse
+TiDB	TiDB
+GreptimeDB	GreptimeDB
+TDengine	TDengine
+TiKV	TiKV
+ShardingSphere	ShardingSphere
+Apache ShardingSphere	ApacheShardingSphere
+Dubbo	Dubbo
+Apache Dubbo	ApacheDubbo
+ZooKeeper	ZooKeeper
+Apache ZooKeeper	ApacheZooKeeper
+Apache Tomcat	ApacheTomcat
+Nacos	Nacos
+Swagger	Swagger
+Databend	Databend
+PostHog	PostHog
+Plausible	Plausible
+Plausible Analytics	PlausibleAnalytics
+n8n	n8n
+Supabase	Supabase
+Strapi	Strapi
+AppFlowy	AppFlowy
+Directus	Directus
+FastAPI	FastAPI
+Hono	Hono
+Fastify	Fastify
+Ruby on Rails	RubyonRails
+Symfony	Symfony
+Beego	Beego
+KoaJS	KoaJS
+SolidJS	SolidJS
+Qwik	Qwik
+Ember.js	Ember.js
+Backbone.js	Backbone.js
+Knockout.js	Knockout.js
+DataEase	DataEase
+Netdata	Netdata
+TimescaleDB	TimescaleDB
+InfluxDB	InfluxDB
+Neo4j	Neo4j
+nebula	nebula
+Gogs	Gogs
+GitBucket	GitBucket
+OpenCV	OpenCV
+Keras	Keras
+PaddleOCR	PaddleOCR
+Content Management System	ContentManagementSystem
+CMS	CMS
+Content Management System	CMS
+Godot	Godot
+Godot Engine	GodotEngine
+Three.js	Three.js
+PixiJS	PixiJS
+TextMate	TextMate
+Docusaurus	Docusaurus
+Envoy	Envoy
+TradingView	TradingView
+ECharts	ECharts
+Apache ECharts	ECharts
+Apache ECharts	ApacheECharts
+CPython	CPython
+OpenJDK	OpenJDK
+OCaml	OCaml
+Clojure	Clojure
+CoffeeScript	CoffeeScript
+Starlark	Starlark
+MinIO	MinIO
+Storj	Storj
+Wasmtime	Wasmtime
+AssemblyScript	AssemblyScript
+WasmEdge	WasmEdge
+Playwright	Playwright
+Puppeteer	Puppeteer
+Appium	Appium
+JMeter	JMeter
+Apache JMeter	ApacheJMeter
+Tauri	Tauri
+React Native	ReactNative
+Ionic Framework	IonicFramework
+Apache Kafka	Kafka
+Apache Kafka	ApacheKafka
+RabbitMQ	RabbitMQ
+RocketMQ	RocketMQ
+gRPC	gRPC
+Excalidraw	Excalidraw
+PlantUML	PlantUML
+Meilisearch	Meilisearch
+etcd	etcd
+Shadcn	Shadcn
+Semantic UI	SemanticUI
+Nmap	Nmap
+Ansible	Ansible
+LevelDB	LevelDB
+RocksDB	RocksDB
+webpack	webpack
+Turbopack	Turbopack
+esbuild	esbuild
+Mongoose	Mongoose
+Sequelize	Sequelize
+Arduino	Arduino
+Raspberry Pi	RaspberryPi
+OpenTofu	OpenTofu
+Pulumi	Pulumi
+LM Studio	LMStudio
+LLM	LLM
+Large Language Model	LLM
+Large Language Model	LargeLanguageModel
+NLP	NLP
+Natural Language Processing	NLP
+Dify	Dify
+ComfyUI	ComfyUI
+Cherry Studio	CherryStudio
+Open WebUI	OpenWebUI
+OpenRouter	OpenRouter
+CUDA	CUDA
+CUDA Toolkit	CUDAToolkit
 WebStorm	WebStorm
 Xcode	Xcode
 emoji	emoji
@@ -609,6 +764,10 @@ Game Boy Color	GameBoyColor
 GCC	GCC
 GNU Compiler Collection	GCC
 GNU Compiler Collection	GNUCompilerCollection
+LLVM	LLVM
+LLDB	LLDB
+Clang	Clang
+CMake	CMake
 uBlacklist	uBlacklist
 Apple Watch	AppleWatch
 AppleCare	AppleCare
@@ -652,9 +811,12 @@ HiCar	HiCar
 CDN	CDN
 Content Delivery Network	CDN
 Content Delivery Network	ContentDeliveryNetwork
+PCDN	PCDN
+Peer-to-Peer Content Delivery Network	PCDN
 CheatSheet	CheatSheet
 Chocolatey	Chocolatey
 choco	choco
+WinGet	WinGet
 ChemBioDraw	ChemBioDraw
 Clean My Mac	CleanMyMac
 Clean My Mac X	CleanMyMacX
@@ -745,7 +907,6 @@ iTunes	iTunes
 iTunes Connect	iTunesConnect
 iTunes Match	iTunesMatch
 iBook	iBook
-iWatch	iWatch
 Kaleidoscope	Kaleidoscope
 Karabiner	Karabiner
 Keka	Keka
@@ -771,7 +932,7 @@ MacUpdate Desktop	MacUpdateDesktop
 Mailbox	Mailbox
 MAMP PRO	MAMPPRO
 Manico	Manico
-Maple	Maple
+Matlab	Matlab
 MarkMyWords	MarkMyWords
 MarsEdit	MarsEdit
 Mathtype	Mathtype
@@ -814,11 +975,7 @@ Quiver	Quiver
 Rdio	Rdio
 Readability	Readability
 Readkit	Readkit
-Regulex	Regulex
-Remote	Remote
 RescueTime	RescueTime
-Retina	Retina
-Safari	Safari
 Safari View Controller	SafariViewController
 SaneDesk	SaneDesk
 Scrapbook	Scrapbook
@@ -844,7 +1001,7 @@ Secure Sockets Layer	SSL
 StackSocial	StackSocial
 Sublime Text	SublimeText
 TechWeb	TechWeb
-Terminal	Terminal
+# Terminal	Terminal
 TestFlight	TestFlight
 Texshop	Texshop
 Textastic	Textastic
@@ -862,6 +1019,7 @@ Typora	Typora
 Uber	Uber
 uBlock	uBlock
 uBlock Origin	uBlockOrigin
+uBlock Origin Lite	uBlockOriginLite
 Ulysses	Ulysses
 USB	USB
 Universal Serial Bus	USB
@@ -886,7 +1044,6 @@ WorkFlowy	WorkFlowy
 WWDC	WWDC
 Apple Worldwide Developers Conference	WWDC
 Xee	Xee
-Xeon	Xeon
 Xmind	Xmind
 xScope	xScope
 XtraFinder	XtraFinder
@@ -906,11 +1063,55 @@ Hypertext Transfer Protocol	HypertextTransferProtocol
 HTTPS	HTTPS
 Hypertext Transfer Protocol Secure	HTTPS
 Hypertext Transfer Protocol Secure	HypertextTransferProtocolSecure
-WSGI	WSGI
+HandBrake	HandBrake
+Logi Options	LogiOptions
+Logi Options+	LogiOptions+
+Downie	Downie
+MindNode	MindNode
+Permute	Permute
+Proxyman	Proxyman
+TablePlus	TablePlus
+wget	wget
+yt-dlp	yt-dlp
+Blockchain	Blockchain
 BTC	BTC
 Bitcoin	BTC
 Bitcoin	Bitcoin
-Blockchain	Blockchain
+ETH	ETH
+Ethereum	ETH
+Ethereum	Ethereum
+Monero	Monero
+Litecoin	Litecoin
+Aptos	Aptos
+Dogecoin	Dogecoin
+Ethena	Ethena
+Worldcoin	Worldcoin
+Bittensor	Bittensor
+Smart Contract	SmartContract
+CoinGecko	CoinGecko
+CoinMarketCap	CoinMarketCap
+CoinGlass	CoinGlass
+CoinDesk	CoinDesk
+CoinCheckup	CoinCheckup
+CoinCodex	CoinCodex
+Coinranking	Coinranking
+DefiLlama	DefiLlama
+Etherscan	Etherscan
+BscScan	BscScan
+Solscan	Solscan
+PolygonScan	PolygonScan
+Glassnode	Glassnode
+PANews	PANews
+Messari	Messari
+Chainalysis	Chainalysis
+CryptoQuant	CryptoQuant
+TokenInsight	TokenInsight
+Trust Wallet	TrustWallet
+imToken	imToken
+MakerDAO	MakerDAO
+Magic Eden	MagicEden
+Substack	Substack
+GameFi	GameFi
 MagSafe	MagSafe
 Magic UI	MagicUI
 HDMI	HDMI
@@ -933,8 +1134,8 @@ Greenwich Mean Time	GMT
 Greenwich Mean Time	GreenwichMeanTime
 GoDaddy	GoDaddy
 SQLAlchemy	SQLAlchemy
-Admin	Admin
-Administrator	Administrator
+# Admin	Admin
+# Administrator	Administrator
 ASMR	ASMR
 Autonomous sensory meridian response	ASMR
 Autonomous sensory meridian response	Autonomoussensorymeridianresponse
@@ -1017,7 +1218,6 @@ Yandex	Yandex
 Geralt	Geralt
 ServerCat	ServerCat
 Zoho	Zoho
-Gecko	Gecko
 TinyPNG	TinyPNG
 Thanos	Thanos
 XML	XML
@@ -1071,6 +1271,7 @@ General Data Protection Regulation	GDPR
 Netlify	Netlify
 Mac Studio	MacStudio
 Studio Display	StudioDisplay
+Pro Display XDR	ProDisplayXDR
 OC	OC
 Objective-C	OC
 Objective-C	Objective-C
@@ -1114,7 +1315,6 @@ ASAP	ASAP
 as soon as possible	ASAP
 PUBG	PUBG
 PLAYERUNKNOWN'S BATTLEGROUNDS	PUBG
-Ruby	Ruby
 GFM	GFM
 GitHub Flavored Markdown	GFM
 GitHub Flavored Markdown	GitHubFlavoredMarkdown
@@ -1188,6 +1388,7 @@ New Technology File System	NewTechnologyFileSystem
 Microsoft NTFS	NTFS
 Microsoft NTFS	MicrosoftNTFS
 ChromeOS	ChromeOS
+Chromebook	Chromebook
 Ed Sheeran	EdSheeran
 Sheeran	Sheeran
 Cloudflare Images	CloudflareImages
@@ -1200,7 +1401,6 @@ HarmonyOS	HarmonyOS
 NPC	NPC
 Non-Player Character	NPC
 Non-Player Character	Non-PlayerCharacter
-Quantumult X	QuantumultX
 skynet	skynet
 serverless	serverless
 Identifier	Identifier
@@ -1343,7 +1543,6 @@ DataSpell	DataSpell
 RubyMine	RubyMine
 AppCode	AppCode
 Code With Me	CodeWithMe
-JetBrains Mono	JetBrainsMono
 JDK	JDK
 Java Development Kit	JDK
 Java Development Kit	JavaDevelopmentKit
@@ -1371,12 +1570,14 @@ Maine	Maine
 Elijah	Elijah
 Love & Peace	Love&Peace
 Peace & Love	Peace&Love
-Liquid	Liquid
 LCD	LCD
 Liquid Crystal Display	LCD
 Liquid Crystal Display	LiquidCrystalDisplay
 Emotional Damage	EmotionalDamage
 GitLab	GitLab
+GitLab Runner	GitLabRunner
+CI/CD	CI/CD
+DevSecOps	DevSecOps
 Apple silicon	Applesilicon
 ADSL	ADSL
 Asymmetric Digital Subscriber Line	ADSL
@@ -1426,6 +1627,7 @@ limon	limon
 GFW	GFW
 Great Firewall	GFW
 Great Firewall	GreatFirewall
+gfwlist	gfwlist
 GeoIP	GeoIP
 gVim	gVim
 Vimium	Vimium
@@ -1439,8 +1641,6 @@ unfo	unfo
 timeshift	timeshift
 ChatGPT	ChatGPT
 OpenAI	OpenAI
-OpenAI Codex	OpenAICodex
-OpenAI ChatGPT	OpenAIChatGPT
 VoIP	VoIP
 Voice over Internet Protocol	VoIP
 Greasy Fork	GreasyFork
@@ -1450,7 +1650,6 @@ VoWiFi	VoWiFi
 Voice Over LTE	VoLTE
 CEF	CEF
 Chromium Embedded Framework	CEF
-Chromium Embedded Framework	ChromiumEmbeddedFramework
 RustDesk	RustDesk
 Capcom	Capcom
 Paxlovid	Paxlovid
@@ -1512,22 +1711,26 @@ LGPL	LGPL
 GNU Lesser General Public License	LGPL
 GNU Lesser General Public License	GNULesserGeneralPublicLicense
 Mozilla Firefox	MozillaFirefox
-Steam Deck	SteamDeck
 Android	Android
-android	android
+Android Auto	AndroidAuto
+Android TV	AndroidTV
 iOS	iOS
 Linux	Linux
 Ubuntu	Ubuntu
+RHEL	RHEL
+Red Hat Enterprise Linux	RHEL
+Red Hat Enterprise Linux	RedHatEnterpriseLinux
+NixOS	NixOS
 Microsoft	Microsoft
 Nintendo	Nintendo
 Wii U	WiiU
 Wii	Wii
-Oracle	Oracle
 OriginOS	OriginOS
 iPhone	iPhone
 iPad	iPad
 iPod	iPod
-# iPods	iPods
+HomePod	HomePod
+HomePod mini	HomePodmini
 UI	UI
 UK	UK
 United Kingdom	UK
@@ -1535,10 +1738,10 @@ United Kingdom	UnitedKingdom
 DirectX	DirectX
 Kinect	Kinect
 Cloudflare	Cloudflare
-X-ray	X-ray
 Hip-Hop	Hip-Hop
 Simplified Chinese	SimplifiedChinese
 Traditional Chinese	TraditionalChinese
+US	US
 United States	US
 United States	UnitedStates
 USA	USA
@@ -1602,8 +1805,11 @@ Dnsmasq	Dnsmasq
 DOS	DOS
 Disk Operating System	DOS
 Disk Operating System	DiskOperatingSystem
-USDT	USDT
 Tether	Tether
+USDT	USDT
+USDC	USDC
+USDe	USDe
+USDS	USDS
 Lua	Lua
 MacType	MacType
 Alipay	Alipay
@@ -1636,6 +1842,7 @@ Unix shell	Unixshell
 Z-Library	Z-Library
 Zaraz	Zaraz
 Scribble Diffusion	ScribbleDiffusion
+ASUS	ASUS
 Lenovo	Lenovo
 Adios	Adios
 EMS	EMS
@@ -1656,9 +1863,16 @@ WLAN	WLAN
 Wireless LAN	WLAN
 GPT	GPT
 Generative Pre-trained Transformer	GPT
-GPT-4	GPT-4
-GPT-3.5	GPT-3.5
 GPTs	GPTs
+GPT-3	GPT-3
+GPT-3.5	GPT-3.5
+GPT-4	GPT-4
+GPT-4o	GPT-4o
+GPT-4.1	GPT-4.1
+GPT-4.5	GPT-4.5
+GPT-5	GPT-5
+GPT-5.1	GPT-5.1
+GPT-5.2	GPT-5.2
 LaMDA	LaMDA
 Language Model for Dialogue Applications	LaMDA
 Coinbase Wallet	CoinbaseWallet
@@ -1677,6 +1891,7 @@ Vultr	Vultr
 GoFrame	GoFrame
 ORM	ORM
 Object Relational Mapping	ORM
+Object Relational Mapping	ObjectRelationalMapping
 KPI	KPI
 Key Performance Indicators	KPI
 mutex	mutex
@@ -1761,19 +1976,16 @@ Narrow AI	NarrowAI
 Applied AI	AppliedAI
 BREAKING CHANGE	BREAKINGCHANGE
 GitHub Actions	GitHubActions
+GitHub Codespaces	GitHubCodespaces
 UUID	UUID
 Universally Unique Identifier	UUID
 Fyne	Fyne
 Claude	Claude
-Claude+	Claude+
-Anthropic	Anthropic
 Cinderella	Cinderella
 WebGPU	WebGPU
 Mailfence	Mailfence
 CodeWhisperer	CodeWhisperer
 espanso	espanso
-okey	okey
-okey-dokey	okey-dokey
 CAPTCHA	CAPTCHA
 Coinbase	Coinbase
 Kraken	Kraken
@@ -1785,6 +1997,17 @@ Arbitrum	Arbitrum
 Avalanche	Avalanche
 Binance	Binance
 Binance Smart Chain	BinanceSmartChain
+Aevo	Aevo
+Bybit	Bybit
+Bitget	Bitget
+BitMart	BitMart
+Bitstamp	Bitstamp
+Deribit	Deribit
+Hyperliquid	Hyperliquid
+HashKey	HashKey
+Pionex	Pionex
+Polymarket	Polymarket
+Raydium	Raydium
 OpenSea	OpenSea
 BNB Chain	BNBChain
 Chainlink	Chainlink
@@ -1882,6 +2105,7 @@ translation	t9n
 p13n	p13n
 personalization	p13n
 personalization	personalization
+K3s	K3s
 K8s	K8s
 Kubernetes	K8s
 Kubernetes	Kubernetes
@@ -1889,6 +2113,7 @@ Kubeadm	Kubeadm
 Minikube	Minikube
 shitwork	shitwork
 W3C	W3C
+World Wide Web Consortium	W3C
 A4	A4
 3D	3D
 Loki	Loki
@@ -1899,12 +2124,26 @@ Oppenheimer	Oppenheimer
 UltraEdit	UltraEdit
 GoldenDict	GoldenDict
 tokenizer	tokenizer
-Stable Diffusion	StableDiffusion
+ControlNet	ControlNet
+CISC	CISC
+RISC	RISC
 x86	x86
 x86-64	x86-64
 x64	x64
 amd64	amd64
 arm64	arm64
+Xeon	Xeon
+Pentium	Pentium
+Celeron	Celeron
+EPYC	EPYC
+Ryzen	Ryzen
+Athlon	Athlon
+DSL	DSL
+Domain Specific Language	DSL
+HDL	HDL
+Hardware Description Language	HDL
+VHDL	VHDL
+Verilog	Verilog
 keysym	keysym
 keysyms	keysyms
 PotPlayer	PotPlayer
@@ -1914,9 +2153,10 @@ protobuf	protobuf
 beyatch	beyatch
 iBus	iBus
 BT	BT
+BitTorrent	BT
 ProtonMail	ProtonMail
 Elasticsearch	Elasticsearch
-Next.js	Next.js
+OpenSearch	OpenSearch
 rho	rho
 D&D	D&D
 Dungeons & Dragons	D&D
@@ -1994,6 +2234,7 @@ unhuman	unhuman
 unhumified	unhumified
 unhumanize	unhumanize
 P2P	P2P
+peer-to-peer	P2P
 F2A	F2A
 B2B	B2B
 C2C	C2C
@@ -2065,7 +2306,6 @@ Manifest V2	ManifestV2
 Manifest V3	ManifestV3
 IMBA	IMBA
 GitButler	GitButler
-Sora	Sora
 WinNAS	WinNAS
 Wireshark	Wireshark
 Theseus	Theseus
@@ -2100,13 +2340,15 @@ International Monetary Fund	IMF
 International Monetary Fund	InternationalMonetaryFund
 Terraform	Terraform
 systemd	systemd
+IC	IC
+Integrated Circuit	IC
+ASIC	ASIC
 FPGA	FPGA
-field-programmable gate array	FPGA
+Field-Programmable Gate Array	FPGA
 Samsung	Samsung
 Samsung Galaxy	SamsungGalaxy
 VimL	VimL
 Vimscript	Vimscript
-Vimscripts	Vimscripts
 kubectl	kubectl
 mvn	mvn
 mvnd	mvnd
@@ -2130,7 +2372,6 @@ MSVC	MSVC
 Microsoft Visual C++	MSVC
 Microsoft Visual C++	MicrosoftVisualC++
 DBeaver	DBeaver
-Vite	Vite
 AE86	AE86
 Floorp	Floorp
 Costco	Costco
@@ -2141,8 +2382,6 @@ Apple Intelligence	AppleIntelligence
 7-Zip	7-Zip
 LGTM	LGTM
 PTAL	PTAL
-GPT-4o	GPT-4o
-Grok	Grok
 MBR	MBR
 master boot record	masterbootrecord
 master boot record	MBR
@@ -2168,10 +2407,49 @@ Mercedes-Benz	Mercedes-Benz
 1Password	1Password
 WD-40	WD-40
 OpenStreetMap	OpenStreetMap
-BanG Dream!	BanGDream
-MyGO!!!!!	MyGO!!!!!
-Ave Mujica	AveMujica
-GPT-4.1	GPT-4.1
-GPT-4.5	GPT-4.5
-Rust	Rust
+OsmAnd	OsmAnd
 Syncthing	Syncthing
+Heptabase	Heptabase
+Ghostty	Ghostty
+WezTerm	WezTerm
+Wez's Terminal Emulator	WezTerm
+Tailscale	Tailscale
+Shadowrocket	Shadowrocket
+Quantumult	Quantumult
+Quantumult X	QuantumultX
+V2Ray	V2Ray
+v2rayN	v2rayN
+v2rayA	v2rayA
+v2ray-core	v2ray-core
+Xray-core	Xray-core
+mihomo	mihomo
+trojan-go	trojan-go
+VLESS	VLESS
+Hysteria	Hysteria
+sing-box	sing-box
+SagerNet	SagerNet
+live house	livehouse
+DiskGenius	DiskGenius
+ICPC	ICPC
+International Collegiate Programming Contest	ICPC
+International Collegiate Programming Contest	InternationalCollegiateProgrammingContest
+UML	UML
+Unified Modeling Language	UML
+Unified Modeling Language	UnifiedModelingLanguage
+Ollama	Ollama
+Omarchy	Omarchy
+LMArena	LMArena
+MaxMind	MaxMind
+PM2.5	PM2.5
+PM10	PM10
+SARS-CoV-2	SARS-CoV-2
+Nano Banana	NanoBanana
+Zotero	Zotero
+CP2K	CP2K
+VASP	VASP
+FTIR	FTIR
+Slurm	Slurm
+Qwen	Qwen
+UnoCSS	UnoCSS
+Temu	Temu
+Clawdbot	Clawdbot
